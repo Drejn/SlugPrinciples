@@ -1,11 +1,11 @@
 {
 	"FileVersion": 3,
-	"Version": 1,
-	"VersionName": "1.0",
+	"Version": 3,
+	"VersionName": "3.0",
 	"FriendlyName": "SlugPrinciples",
 	"Description": "",
 	"Category": "Other",
-	"CreatedBy": "",
+	"CreatedBy": "Drejn",
 	"CreatedByURL": "",
 	"DocsURL": "",
 	"MarketplaceURL": "",
@@ -13,5 +13,14 @@
 	"CanContainContent": true,
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
-	"Installed": false
+	"Installed": false,
+	"SemVersion": "3.0.0",
+
+	 "Plugins": [
+		{
+		  "Name": "SML",
+		  "SemVersion": "^3.0.0",
+		  "Enabled": true
+		}
+	  ]
 }
