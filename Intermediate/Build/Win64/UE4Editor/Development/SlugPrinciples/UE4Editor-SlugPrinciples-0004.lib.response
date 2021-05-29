@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-SlugPrinciples-0004.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Documenti\Repos\Dev\Intermediate\Build\Win64\FactoryGameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Development\SlugPrinciples\Module.SlugPrinciples.cpp.obj"
+"D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Development\SlugPrinciples\Module.SlugPrinciples.gen.cpp.obj"
+"D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Development\SlugPrinciples\Default.rc2.res"
+/OUT:"D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Development\SlugPrinciples\UE4Editor-SlugPrinciples-0004.lib"
+/INCLUDE:IMPLEMENT_MODULE_SlugPrinciples

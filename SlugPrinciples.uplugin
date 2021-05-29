@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 3,
-	"VersionName": "3.3.1",
+	"VersionName": "3.4.0",
 	"FriendlyName": "SlugPrinciples",
 	"Description": "",
 	"Category": "Other",
@@ -14,8 +14,14 @@
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
-	"SemVersion": "3.3.1",
-
+	"SemVersion": "3.4.0",
+	"Modules": [
+		{
+			"Name": "SlugPrinciples",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
 	 "Plugins": [
 		{
 		  "Name": "SML",

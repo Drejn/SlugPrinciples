@@ -1,0 +1,20 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.SlugPrinciples.cpp.obj": [
+			"FGSlugPrinciplesBuilding.cpp.obj",
+			"FGSlugPrinciplesEnergyPoolMK1.cpp.obj",
+			"FGSlugPrinciplesEnergyPoolMK2.cpp.obj",
+			"FGSlugPrinciplesHologram.cpp.obj",
+			"SlugPrinciplesModule.cpp.obj",
+			"SlugPrinciplesLogging.cpp.obj"
+		],
+		"Module.SlugPrinciples.gen.cpp.obj": [
+			"FGSlugPrinciplesBuilding.gen.cpp.obj",
+			"FGSlugPrinciplesEnergyPoolMK1.gen.cpp.obj",
+			"FGSlugPrinciplesEnergyPoolMK2.gen.cpp.obj",
+			"FGSlugPrinciplesHologram.gen.cpp.obj",
+			"SlugPrinciples.init.gen.cpp.obj"
+		]
+	}
+}

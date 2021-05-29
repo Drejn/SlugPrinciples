@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/LTCG
+/DEF
+/NAME:"FactoryGame-SlugPrinciples-Win64-Shipping.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Documenti\Repos\Dev\Intermediate\Build\Win64\FactoryGame\Shipping\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\FactoryGame\Shipping\SlugPrinciples\Module.SlugPrinciples.cpp.obj"
+"D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\FactoryGame\Shipping\SlugPrinciples\Module.SlugPrinciples.gen.cpp.obj"
+"D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\FactoryGame\Shipping\SlugPrinciples\Default.rc2.res"
+/OUT:"D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\FactoryGame\Shipping\SlugPrinciples\FactoryGame-SlugPrinciples-Win64-Shipping.lib"
+/INCLUDE:IMPLEMENT_MODULE_SlugPrinciples

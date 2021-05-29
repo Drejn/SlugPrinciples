@@ -1,0 +1,2 @@
+D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\FactoryGame\Shipping\SlugPrinciples\Definitions.SlugPrinciples.h
+D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Source\SlugPrinciples\Public\SlugPrinciplesModule.h
