@@ -42,9 +42,9 @@ bool AFGSlugPrinciplesHologram::IsValidHitResult(const FHitResult& hit) const {
 			
 
 			FString str = AFGSlugPrinciplesEnergyPoolMK2::StaticClass()->GetName();
-			UE_LOG(SlugPrinciplesLog, Warning, TEXT("Target recipe: %s"), *str);
+			//UE_LOG(SlugPrinciplesLog, Warning, TEXT("Target recipe: %s"), *str);
 			FName RecipeName = "Recipe_EnergyPoolMK2_C";
-			UE_LOG(SlugPrinciplesLog, Warning, TEXT("Target recipe: %s"), *RecipeName.ToString());
+			//UE_LOG(SlugPrinciplesLog, Warning, TEXT("Target recipe: %s"), *RecipeName.ToString());
 			
 			if (mRecipe->GetFName() == RecipeName){
 				if (target->IsA(AFGSlugPrinciplesEnergyPoolMK1::StaticClass())) {
