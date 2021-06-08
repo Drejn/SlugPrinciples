@@ -5,6 +5,7 @@
 			"FGSlugPrinciplesBuilding.cpp.obj",
 			"FGSlugPrinciplesEnergyPoolMK1.cpp.obj",
 			"FGSlugPrinciplesEnergyPoolMK2.cpp.obj",
+			"FGSlugPrinciplesOctahedron.cpp.obj",
 			"FGSlugPrinciplesHologram.cpp.obj",
 			"SlugPrinciplesModule.cpp.obj",
 			"SlugPrinciplesLogging.cpp.obj"
@@ -14,6 +15,7 @@
 			"FGSlugPrinciplesEnergyPoolMK1.gen.cpp.obj",
 			"FGSlugPrinciplesEnergyPoolMK2.gen.cpp.obj",
 			"FGSlugPrinciplesHologram.gen.cpp.obj",
+			"FGSlugPrinciplesOctahedron.gen.cpp.obj",
 			"SlugPrinciples.init.gen.cpp.obj"
 		]
 	}

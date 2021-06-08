@@ -1049,6 +1049,9 @@ D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor
 D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Source/SlugPrinciples/Private/Buildings/FGSlugPrinciplesEnergyPoolMK2.cpp
 D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Source\SlugPrinciples\Public\Buildings/FGSlugPrinciplesEnergyPoolMK2.h
 D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesEnergyPoolMK2.generated.h
+D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Source/SlugPrinciples/Private/Buildings/FGSlugPrinciplesOctahedron.cpp
+D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Source\SlugPrinciples\Public\Buildings/FGSlugPrinciplesOctahedron.h
+D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesOctahedron.generated.h
 D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Source/SlugPrinciples/Private/Holograms/FGSlugPrinciplesHologram.cpp
 D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Source\SlugPrinciples\Public\Holograms/FGSlugPrinciplesHologram.h
 D:\Documenti\Repos\Dev\Source\FactoryGame\Public\Hologram/FGFactoryHologram.h

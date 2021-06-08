@@ -3,4 +3,5 @@
 #include "D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesEnergyPoolMK1.gen.cpp"
 #include "D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesEnergyPoolMK2.gen.cpp"
 #include "D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesHologram.gen.cpp"
+#include "D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesOctahedron.gen.cpp"
 #include "D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/SlugPrinciples.init.gen.cpp"

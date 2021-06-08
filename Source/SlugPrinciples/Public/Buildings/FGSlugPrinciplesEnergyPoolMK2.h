@@ -14,4 +14,6 @@ class SLUGPRINCIPLES_API AFGSlugPrinciplesEnergyPoolMK2 : public AFGSlugPrincipl
 {
 	GENERATED_BODY()
 	
+
+
 };

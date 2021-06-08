@@ -1068,4 +1068,7 @@ D:\Documenti\Repos\Dev\Intermediate\Build\Win64\FactoryGame\Inc\FactoryGame\FGCo
 D:\Documenti\Repos\Dev\Intermediate\Build\Win64\FactoryGame\Inc\FactoryGame\FGFactoryConnectionComponent.generated.h
 D:\Documenti\Repos\Dev\Intermediate\Build\Win64\FactoryGame\Inc\FactoryGame\FGFactoryHologram.generated.h
 D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\FactoryGame\Inc\SlugPrinciples\FGSlugPrinciplesHologram.generated.h
+D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Intermediate/Build/Win64/FactoryGame/Inc/SlugPrinciples/FGSlugPrinciplesOctahedron.gen.cpp
+D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Source\SlugPrinciples/Public/Buildings/FGSlugPrinciplesOctahedron.h
+D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\FactoryGame\Inc\SlugPrinciples\FGSlugPrinciplesOctahedron.generated.h
 D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Intermediate/Build/Win64/FactoryGame/Inc/SlugPrinciples/SlugPrinciples.init.gen.cpp
