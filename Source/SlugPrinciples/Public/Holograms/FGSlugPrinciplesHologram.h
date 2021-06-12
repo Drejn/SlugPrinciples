@@ -21,7 +21,11 @@ public:
 	//virtual AActor* GetUpgradedActor() const override;
 	virtual void ConfigureActor(class AFGBuildable* inBuildable) const override;
 	FTransform hololocation;
+
+	//Used for upgrades
 	AFGSlugPrinciplesBuilding* ReplacedBuilding;
+	//Used for attachments
+	AFGSlugPrinciplesBuilding* ParentBuilding;
 	FVector loc;
 	FRotator rot;
 };

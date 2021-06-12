@@ -21,6 +21,9 @@ bool AFGSlugPrinciplesHologram::TryUpgrade(const FHitResult& hitResult) {
 			ReplacedBuilding = Cast<AFGSlugPrinciplesBuilding>(target);
 			rot = target->GetActorRotation();
 			loc = target->GetActorLocation();
+			if (target->IsA(AFGSlugPrinciplesEnergyPoolMK2::StaticClass())) {
+				ParentBuilding = Cast<AFGSlugPrinciplesEnergyPoolMK2>(target);
+			}
 			
 			hololocation = target->GetTransform();
 			this->SetActorTransform(hololocation);	
@@ -39,18 +42,25 @@ bool AFGSlugPrinciplesHologram::IsValidHitResult(const FHitResult& hit) const {
 	if (target) {
 		if (target->IsA(AFGSlugPrinciplesBuilding::StaticClass())) {
 			
-			
-
-			FString str = AFGSlugPrinciplesEnergyPoolMK2::StaticClass()->GetName();
 			//UE_LOG(SlugPrinciplesLog, Warning, TEXT("Target recipe: %s"), *str);
 			FName RecipeName = "Recipe_EnergyPoolMK2_C";
 			//UE_LOG(SlugPrinciplesLog, Warning, TEXT("Target recipe: %s"), *RecipeName.ToString());
-			
+			FName RecipeName2 = "Recipe_FluidPress_C";
 			if (mRecipe->GetFName() == RecipeName){
 				if (target->IsA(AFGSlugPrinciplesEnergyPoolMK1::StaticClass())) {
 					return true;
 				}
 			}
+			else if (mRecipe->GetFName() == RecipeName2) {
+				if (target->IsA(AFGSlugPrinciplesEnergyPoolMK2::StaticClass())) {
+					//ParentBuilding = Cast<AFGSlugPrinciplesBuilding>(target);
+					AFGSlugPrinciplesEnergyPoolMK2* AttachmentCheck = Cast<AFGSlugPrinciplesEnergyPoolMK2>(target);
+					if(!AttachmentCheck->HasFluidPress()){
+						return true;
+					}
+				}
+			}
+
 		}
 	}
 	return false;
@@ -71,52 +81,15 @@ void AFGSlugPrinciplesHologram::ConfigureActor(class AFGBuildable* inBuildable) 
 		ReplacedBuilding->Execute_Upgrade(ReplacedBuilding,inBuildable);
 
 	}
+	if (inBuildable->IsA(AFGSlugPrinciplesFluidPress::StaticClass())) {
+		UE_LOG(SlugPrinciplesLog, Warning, TEXT("configuring Fluid Press"));
+		if (ParentBuilding->IsA(AFGSlugPrinciplesEnergyPoolMK2::StaticClass())) {
+			AFGSlugPrinciplesEnergyPoolMK2* EnergyPool = Cast<AFGSlugPrinciplesEnergyPoolMK2>(ParentBuilding);
+			EnergyPool->mFluidPress = Cast<AFGSlugPrinciplesFluidPress>(inBuildable);
+			EnergyPool->mFluidPress->mParentBuilding = EnergyPool;
+		}
+	}
 	//ReplacedActor->Destroy();
 	//CastedActor->Execute_Upgrade(CastedActor, inBuildable);
 
 }
-
-/*
-AActor* AFGSlugPrinciplesHologram::Construct(TArray< AActor* >& out_children, FNetConstructionID constructionID) {
-	UE_LOG(SlugPrinciplesLog, Warning, TEXT("Construct"));
-	
-	//if (Super::Construct(out_children, constructionID)) {
-	//	UE_LOG(SlugPrinciplesLog, Warning, TEXT("Returned something"));
-	//}
-	
-	ReplacedBuilding->Upgrade()
-	
-
-	//newactor is null
-	if (newactor) {
-		UE_LOG(SlugPrinciplesLog, Warning, TEXT("Is Not Null"));
-		
-	}
-	return newactor;
-}
-*/
-
-/*
-bool AFGSlugPrinciplesHologram::DoMultiStepPlacement(bool isInputFromARelease) {
-	UE_LOG(SlugPrinciplesLog, Warning, TEXT("Do Multistep Placement"));
-
-	
-	FName cls = mRecipe->GetFName();
-	FName bld = mBuildClass->GetFName();
-
-	UE_LOG(SlugPrinciplesLog, Warning, TEXT("Class Name %s"), *cls.ToString());
-	UE_LOG(SlugPrinciplesLog, Warning, TEXT("Build Name %s"), *bld.ToString());
-	return true;
-}
-*/
-/*
-AActor* AFGSlugPrinciplesHologram::GetUpgradedActor() const {
-	UE_LOG(SlugPrinciplesLog, Warning, TEXT("Get Upgraded Actor"));
-	//AFGSlugPrinciplesBuilding* newactor = Cast< AFGSlugPrinciplesBuilding>(Super::GetUpgradedActor());
-	if (ReplacedBuilding) {
-		UE_LOG(SlugPrinciplesLog, Warning, TEXT("Upgraded Actor Found"));
-	}
-	
-	return ReplacedBuilding;
-}
-*/

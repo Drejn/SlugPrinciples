@@ -2,6 +2,7 @@
 #include "D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Source/SlugPrinciples/Private/Buildings/FGSlugPrinciplesBuilding.cpp"
 #include "D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Source/SlugPrinciples/Private/Buildings/FGSlugPrinciplesEnergyPoolMK1.cpp"
 #include "D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Source/SlugPrinciples/Private/Buildings/FGSlugPrinciplesEnergyPoolMK2.cpp"
+#include "D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Source/SlugPrinciples/Private/Buildings/FGSlugPrinciplesFluidPress.cpp"
 #include "D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Source/SlugPrinciples/Private/Buildings/FGSlugPrinciplesOctahedron.cpp"
 #include "D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Source/SlugPrinciples/Private/Holograms/FGSlugPrinciplesHologram.cpp"
 #include "D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Source/SlugPrinciples/Private/SlugPrinciplesModule.cpp"
