@@ -8,6 +8,7 @@
 			"FGSlugPrinciplesFluidPress.cpp.obj",
 			"FGSlugPrinciplesOctahedron.cpp.obj",
 			"FGSlugPrinciplesHologram.cpp.obj",
+			"FGSlugPrinciplesLib.cpp.obj",
 			"SlugPrinciplesModule.cpp.obj",
 			"SlugPrinciplesLogging.cpp.obj"
 		],
@@ -17,6 +18,7 @@
 			"FGSlugPrinciplesEnergyPoolMK2.gen.cpp.obj",
 			"FGSlugPrinciplesFluidPress.gen.cpp.obj",
 			"FGSlugPrinciplesHologram.gen.cpp.obj",
+			"FGSlugPrinciplesLib.gen.cpp.obj",
 			"FGSlugPrinciplesOctahedron.gen.cpp.obj",
 			"SlugPrinciples.init.gen.cpp.obj"
 		]

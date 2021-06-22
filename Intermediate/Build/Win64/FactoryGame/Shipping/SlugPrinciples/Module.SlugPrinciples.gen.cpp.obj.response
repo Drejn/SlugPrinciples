@@ -31,10 +31,10 @@
 /wd4244
 /wd4838
 /I .
-/I D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Source\SlugPrinciples\Private
-/I D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\FactoryGame\Inc\SlugPrinciples
-/I D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Source
-/I D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Source\SlugPrinciples\Public
+/I D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Source\SlugPrinciples\Private
+/I D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Intermediate\Build\Win64\FactoryGame\Inc\SlugPrinciples
+/I D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Source
+/I D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Source\SlugPrinciples\Public
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -146,11 +146,11 @@
 /I ..\Plugins\Runtime\ApexDestruction\Intermediate\Build\Win64\FactoryGame\Inc\ApexDestruction
 /I ..\Plugins\Runtime\ApexDestruction\Source
 /I ..\Plugins\Runtime\ApexDestruction\Source\ApexDestruction\Public
-/I D:\Documenti\Repos\Dev\Plugins\Wwise\Intermediate\Build\Win64\FactoryGame\Inc\AkAudio
-/I D:\Documenti\Repos\Dev\Plugins\Wwise\Source
-/I D:\Documenti\Repos\Dev\Plugins\Wwise\ThirdParty\include
-/I D:\Documenti\Repos\Dev\Plugins\Wwise\Source\AkAudio\Classes
-/I D:\Documenti\Repos\Dev\Plugins\Wwise\Source\AkAudio\Public
+/I D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\Wwise\Intermediate\Build\Win64\FactoryGame\Inc\AkAudio
+/I D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\Wwise\Source
+/I D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\Wwise\ThirdParty\include
+/I D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\Wwise\Source\AkAudio\Classes
+/I D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\Wwise\Source\AkAudio\Public
 /I ..\Intermediate\Build\Win64\FactoryGame\Inc\UMG
 /I Runtime\UMG\Public
 /I Runtime\Online
@@ -174,18 +174,18 @@
 /I Runtime\GameplayTasks\Classes
 /I Runtime\GameplayTasks\Public
 /I ..\Intermediate\Build\Win64\FactoryGame\Inc\NavigationSystem
-/I D:\Documenti\Repos\Dev\Intermediate\Build\Win64\FactoryGame\Inc\FactoryGame
-/I D:\Documenti\Repos\Dev\Source
-/I D:\Documenti\Repos\Dev\Source\FactoryGame\Public
+/I D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\FactoryGame\Inc\FactoryGame
+/I D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source
+/I D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public
 /I ..\Intermediate\Build\Win64\FactoryGame\Inc\OnlineSubsystemEOS
 /I Runtime\OnlineSubsystemEOS\Public
 /I ..\Intermediate\Build\Win64\FactoryGame\Inc\InstancedSplines
 /I Runtime\InstancedSplines\Source
 /I Runtime\InstancedSplines\Source\InstancedSplines\Public
-/I D:\Documenti\Repos\Dev\Plugins\SML\Intermediate\Build\Win64\FactoryGame\Inc\SML
-/I D:\Documenti\Repos\Dev\Plugins\SML\Source
-/I D:\Documenti\Repos\Dev\Plugins\SML\ThirdParty\include
-/I D:\Documenti\Repos\Dev\Plugins\SML\Source\SML\Public
+/I D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SML\Intermediate\Build\Win64\FactoryGame\Inc\SML
+/I D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SML\Source
+/I D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SML\ThirdParty\include
+/I D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SML\Source\SML\Public
 /I Runtime\Projects\Public
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
@@ -218,12 +218,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
 /D_HAS_EXCEPTIONS=0
 /D_HAS_EXCEPTIONS=0
-/FI"D:\Documenti\Repos\Dev\Intermediate\Build\Win64\FactoryGame\Shipping\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"D:\Documenti\Repos\Dev\Intermediate\Build\Win64\FactoryGame\Shipping\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"D:\Documenti\Repos\Dev\Intermediate\Build\Win64\FactoryGame\Shipping\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\FactoryGame\Shipping\SlugPrinciples\Module.SlugPrinciples.gen.cpp"
-/FI"D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\FactoryGame\Shipping\SlugPrinciples\Definitions.SlugPrinciples.h"
-/Fo"D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\FactoryGame\Shipping\SlugPrinciples\Module.SlugPrinciples.gen.cpp.obj"
+/FI"D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\FactoryGame\Shipping\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\FactoryGame\Shipping\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\FactoryGame\Shipping\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Intermediate\Build\Win64\FactoryGame\Shipping\SlugPrinciples\Module.SlugPrinciples.gen.cpp"
+/FI"D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Intermediate\Build\Win64\FactoryGame\Shipping\SlugPrinciples\Definitions.SlugPrinciples.h"
+/Fo"D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Intermediate\Build\Win64\FactoryGame\Shipping\SlugPrinciples\Module.SlugPrinciples.gen.cpp.obj"
 /TP
 /GR-
 /W4

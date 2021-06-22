@@ -1,15 +1,15 @@
-D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Development\SlugPrinciples\Definitions.SlugPrinciples.h
-D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesBuilding.gen.cpp
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Development\SlugPrinciples\Definitions.SlugPrinciples.h
+D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesBuilding.gen.cpp
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Source\SlugPrinciples/Public/Buildings/FGSlugPrinciplesBuilding.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\Buildables/FGBuildableManufacturer.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\Buildables/FGBuildableFactory.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\Buildables/FGBuildable.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGUseableInterface.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGUseableInterface.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\ItemAmount.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FactoryGame.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Source\SlugPrinciples/Public/Buildings/FGSlugPrinciplesBuilding.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\Buildables/FGBuildableManufacturer.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\Buildables/FGBuildableFactory.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\Buildables/FGBuildable.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGUseableInterface.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGUseableInterface.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\ItemAmount.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FactoryGame.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Engine\Public\EngineMinimal.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\CoreUObject\Public\CoreUObject.h
@@ -201,7 +201,7 @@ D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Net\Core\Public\Net/C
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Engine\Public\Net/DataReplication.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Engine\Classes\Engine/ActorChannel.h
 D:\Program Files\Unreal Engine - CSS\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ActorChannel.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\UnitHelpers.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\UnitHelpers.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\AIModule\Public\BlueprintNodeHelpers.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Slate\Public\SlateBasics.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
@@ -293,34 +293,34 @@ D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Slate\Public\Widgets/
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Slate\Public\Framework/Docking/LayoutService.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Slate\Public\Widgets/Notifications/SNotificationList.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Slate\Public\Framework/Notifications/NotificationManager.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\Resources/FGItemDescriptor.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGItemDescriptor.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\ItemAmount.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGDismantleInterface.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGInventoryComponent.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\SharedInventoryStatePtr.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGSaveSession.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGSaveSystem.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGOnlineSessionSettings.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\Resources/FGItemDescriptor.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGItemDescriptor.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\ItemAmount.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGDismantleInterface.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGInventoryComponent.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\SharedInventoryStatePtr.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGSaveSession.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGSaveSystem.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGOnlineSessionSettings.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\OnlineSubsystemEOS\Public\NAT.h
 D:\Program Files\Unreal Engine - CSS\Engine\Intermediate\Build\Win64\UE4Editor\Inc\OnlineSubsystemEOS\NAT.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGOnlineSessionSettings.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGSaveSystem.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGObjectReference.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGSaveSession.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGOnlineSessionSettings.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGSaveSystem.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGObjectReference.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGSaveSession.generated.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Engine\Classes\Engine/PackageMapClient.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Core\Public\Misc/NetworkVersion.h
 D:\Program Files\Unreal Engine - CSS\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PackageMapClient.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\SharedInventoryStatePtr.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGSaveInterface.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGSaveInterface.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGInventoryComponent.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGDismantleInterface.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGBlueprintFunctionLibrary.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\UI/FGPopupWidget.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGPopupInstigatorInterface.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGPopupInstigatorInterface.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\UI/FGInteractWidget.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\SharedInventoryStatePtr.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGSaveInterface.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGSaveInterface.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGInventoryComponent.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGDismantleInterface.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGBlueprintFunctionLibrary.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\UI/FGPopupWidget.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGPopupInstigatorInterface.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGPopupInstigatorInterface.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\UI/FGInteractWidget.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\UMG\Public\UMG.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Engine\Public\Engine.h
@@ -997,79 +997,82 @@ D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\UMG\Public\Animation/
 D:\Program Files\Unreal Engine - CSS\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\MovieSceneMarginTrack.generated.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\UMG\Public\Animation/UMGSequencePlayer.h
 D:\Program Files\Unreal Engine - CSS\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UMGSequencePlayer.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGInteractWidget.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGPopupWidget.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGRecipe.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\Hologram/HologramSplinePathMode.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\HologramSplinePathMode.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGEventSubsystem.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGSubsystem.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGSubsystem.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGEventSubsystem.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGRecipe.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBlueprintFunctionLibrary.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FactoryTick.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FactoryTick.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGColorInterface.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGColorInterface.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\Replication/FGReplicationDetailActorOwnerInterface.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\Replication/FGReplicationDetailActor.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\Replication/FGReplicationDependencyActorInterface.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGReplicationDependencyActorInterface.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGReplicationDetailActor.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGReplicationDetailActorOwnerInterface.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGBuildableSubsystem.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\BuildableColorSlotBase.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGBuildingColorSlotStruct.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGInteractWidget.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGPopupWidget.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGRecipe.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\Hologram/HologramSplinePathMode.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\HologramSplinePathMode.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGEventSubsystem.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGSubsystem.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGSubsystem.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGEventSubsystem.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGRecipe.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBlueprintFunctionLibrary.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FactoryTick.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FactoryTick.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGColorInterface.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGColorInterface.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\Replication/FGReplicationDetailActorOwnerInterface.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\Replication/FGReplicationDetailActor.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\Replication/FGReplicationDependencyActorInterface.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGReplicationDependencyActorInterface.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGReplicationDetailActor.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGReplicationDetailActorOwnerInterface.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGBuildableSubsystem.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\BuildableColorSlotBase.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGBuildingColorSlotStruct.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\CoreUObject\Public\UObject/NoExportTypes.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Core\Public\Math/UnitConversion.h
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Core\Public\Math/UnitConversion.inl
 D:\Program Files\Unreal Engine - CSS\Engine\Source\Runtime\Core\Public\Internationalization/PolyglotTextData.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBuildingColorSlotStruct.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBuildableSubsystem.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGBuildingTagInterface.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBuildingTagInterface.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBuildable.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGRecipeProducerInterface.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGRecipeProducerInterface.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGSignificanceInterface.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGSignificanceInterface.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\Replication/FGReplicationDetailInventoryComponent.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGReplicationDetailInventoryComponent.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\Replication/FGReplicationDetailActor_BuildableFactory.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGReplicationDetailActor_BuildableFactory.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBuildableFactory.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\Replication/FGReplicationDetailActor_Manufacturing.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGReplicationDetailActor_Manufacturing.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBuildableManufacturer.generated.h
-D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesBuilding.generated.h
-D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesEnergyPoolMK1.gen.cpp
-D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Source\SlugPrinciples/Public/Buildings/FGSlugPrinciplesEnergyPoolMK1.h
-D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesEnergyPoolMK1.generated.h
-D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesEnergyPoolMK2.gen.cpp
-D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Source\SlugPrinciples/Public/Buildings/FGSlugPrinciplesEnergyPoolMK2.h
-D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Source\SlugPrinciples\Public\Buildings/FGSlugPrinciplesFluidPress.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGFactoryConnectionComponent.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGConnectionComponent.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGConnectionComponent.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGFactoryConnectionComponent.generated.h
-D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesFluidPress.generated.h
-D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesEnergyPoolMK2.generated.h
-D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesFluidPress.gen.cpp
-D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesHologram.gen.cpp
-D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Source\SlugPrinciples/Public/Holograms/FGSlugPrinciplesHologram.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\Hologram/FGFactoryHologram.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\Hologram/FGBuildableHologram.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\Hologram/FGHologram.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\FGConstructionMessageInterface.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGConstructionMessageInterface.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGHologram.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBuildableHologram.generated.h
-D:\Documenti\Repos\Dev\Source\FactoryGame\Public\Hologram/FGBuildGuide.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBuildGuide.generated.h
-D:\Documenti\Repos\Dev\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGFactoryHologram.generated.h
-D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesHologram.generated.h
-D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesOctahedron.gen.cpp
-D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Source\SlugPrinciples/Public/Buildings/FGSlugPrinciplesOctahedron.h
-D:\Documenti\Repos\Dev\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesOctahedron.generated.h
-D:/Documenti/Repos/Dev/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/SlugPrinciples.init.gen.cpp
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBuildingColorSlotStruct.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBuildableSubsystem.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGBuildingTagInterface.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBuildingTagInterface.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBuildable.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGRecipeProducerInterface.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGRecipeProducerInterface.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGSignificanceInterface.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGSignificanceInterface.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\Replication/FGReplicationDetailInventoryComponent.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGReplicationDetailInventoryComponent.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\Replication/FGReplicationDetailActor_BuildableFactory.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGReplicationDetailActor_BuildableFactory.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBuildableFactory.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\Replication/FGReplicationDetailActor_Manufacturing.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGReplicationDetailActor_Manufacturing.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBuildableManufacturer.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesBuilding.generated.h
+D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesEnergyPoolMK1.gen.cpp
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Source\SlugPrinciples/Public/Buildings/FGSlugPrinciplesEnergyPoolMK1.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesEnergyPoolMK1.generated.h
+D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesEnergyPoolMK2.gen.cpp
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Source\SlugPrinciples/Public/Buildings/FGSlugPrinciplesEnergyPoolMK2.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Source\SlugPrinciples\Public\Buildings/FGSlugPrinciplesFluidPress.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGFactoryConnectionComponent.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGConnectionComponent.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGConnectionComponent.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGFactoryConnectionComponent.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesFluidPress.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesEnergyPoolMK2.generated.h
+D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesFluidPress.gen.cpp
+D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesHologram.gen.cpp
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Source\SlugPrinciples/Public/Holograms/FGSlugPrinciplesHologram.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\Hologram/FGFactoryHologram.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\Hologram/FGBuildableHologram.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\Hologram/FGHologram.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGConstructionMessageInterface.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGConstructionMessageInterface.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGHologram.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBuildableHologram.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\Hologram/FGBuildGuide.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGBuildGuide.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGFactoryHologram.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesHologram.generated.h
+D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesLib.gen.cpp
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Source\SlugPrinciples/Public/Lib/FGSlugPrinciplesLib.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesLib.generated.h
+D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesOctahedron.gen.cpp
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Source\SlugPrinciples/Public/Buildings/FGSlugPrinciplesOctahedron.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesOctahedron.generated.h
+D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/SlugPrinciples.init.gen.cpp

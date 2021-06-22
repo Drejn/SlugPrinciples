@@ -11,18 +11,22 @@
 #endif
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeSlugPrinciples_init() {}
+	SLUGPRINCIPLES_API UFunction* Z_Construct_UDelegateFunction_SlugPrinciples_OnWidgetConstruct__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_SlugPrinciples()
 	{
 		static UPackage* ReturnPackage = nullptr;
 		if (!ReturnPackage)
 		{
+			static UObject* (*const SingletonFuncArray[])() = {
+				(UObject* (*)())Z_Construct_UDelegateFunction_SlugPrinciples_OnWidgetConstruct__DelegateSignature,
+			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/SlugPrinciples",
-				nullptr,
-				0,
+				SingletonFuncArray,
+				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x18ABF383,
-				0xBE41EDDE,
+				0x0F6864B6,
+				0xE0B65515,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);
