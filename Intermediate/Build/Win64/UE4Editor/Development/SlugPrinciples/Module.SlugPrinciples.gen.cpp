@@ -5,5 +5,7 @@
 #include "D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesFluidPress.gen.cpp"
 #include "D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesHologram.gen.cpp"
 #include "D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesLib.gen.cpp"
+#include "D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesModularStorage.gen.cpp"
 #include "D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesOctahedron.gen.cpp"
+#include "D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/FGSlugPrinciplesStackableHologram.gen.cpp"
 #include "D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/UE4Editor/Inc/SlugPrinciples/SlugPrinciples.init.gen.cpp"

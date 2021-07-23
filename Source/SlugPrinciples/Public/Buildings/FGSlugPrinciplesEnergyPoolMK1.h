@@ -13,5 +13,8 @@ UCLASS()
 class SLUGPRINCIPLES_API AFGSlugPrinciplesEnergyPoolMK1 : public AFGSlugPrinciplesBuilding
 {
 	GENERATED_BODY()
+
+
+	FText GetLookAtDecription_Implementation(class AFGCharacterPlayer* byCharacter, const FUseState& state) const override;
 	
 };

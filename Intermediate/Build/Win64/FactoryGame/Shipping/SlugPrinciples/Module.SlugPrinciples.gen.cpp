@@ -5,5 +5,7 @@
 #include "D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/FactoryGame/Inc/SlugPrinciples/FGSlugPrinciplesFluidPress.gen.cpp"
 #include "D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/FactoryGame/Inc/SlugPrinciples/FGSlugPrinciplesHologram.gen.cpp"
 #include "D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/FactoryGame/Inc/SlugPrinciples/FGSlugPrinciplesLib.gen.cpp"
+#include "D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/FactoryGame/Inc/SlugPrinciples/FGSlugPrinciplesModularStorage.gen.cpp"
 #include "D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/FactoryGame/Inc/SlugPrinciples/FGSlugPrinciplesOctahedron.gen.cpp"
+#include "D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/FactoryGame/Inc/SlugPrinciples/FGSlugPrinciplesStackableHologram.gen.cpp"
 #include "D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Intermediate/Build/Win64/FactoryGame/Inc/SlugPrinciples/SlugPrinciples.init.gen.cpp"

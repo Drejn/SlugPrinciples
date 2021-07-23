@@ -6,8 +6,10 @@
 			"FGSlugPrinciplesEnergyPoolMK1.cpp.obj",
 			"FGSlugPrinciplesEnergyPoolMK2.cpp.obj",
 			"FGSlugPrinciplesFluidPress.cpp.obj",
+			"FGSlugPrinciplesModularStorage.cpp.obj",
 			"FGSlugPrinciplesOctahedron.cpp.obj",
 			"FGSlugPrinciplesHologram.cpp.obj",
+			"FGSlugPrinciplesStackableHologram.cpp.obj",
 			"FGSlugPrinciplesLib.cpp.obj",
 			"SlugPrinciplesModule.cpp.obj",
 			"SlugPrinciplesLogging.cpp.obj"
@@ -19,7 +21,9 @@
 			"FGSlugPrinciplesFluidPress.gen.cpp.obj",
 			"FGSlugPrinciplesHologram.gen.cpp.obj",
 			"FGSlugPrinciplesLib.gen.cpp.obj",
+			"FGSlugPrinciplesModularStorage.gen.cpp.obj",
 			"FGSlugPrinciplesOctahedron.gen.cpp.obj",
+			"FGSlugPrinciplesStackableHologram.gen.cpp.obj",
 			"SlugPrinciples.init.gen.cpp.obj"
 		]
 	}

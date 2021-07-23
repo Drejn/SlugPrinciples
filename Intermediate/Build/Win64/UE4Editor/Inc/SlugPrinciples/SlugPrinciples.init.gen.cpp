@@ -25,8 +25,8 @@ void EmptyLinkFunctionForGeneratedCodeSlugPrinciples_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x0F6864B6,
-				0xE0B65515,
+				0xB87315A4,
+				0x8AF6F647,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

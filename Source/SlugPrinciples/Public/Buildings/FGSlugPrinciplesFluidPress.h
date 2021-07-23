@@ -17,7 +17,8 @@ class SLUGPRINCIPLES_API AFGSlugPrinciplesFluidPress : public AFGSlugPrinciplesB
 	GENERATED_BODY()
 public:
 		UFUNCTION(BlueprintCallable, Category = "FactoryGame|Slug Principles Building|Fluid Press")
-			AFGSlugPrinciplesEnergyPoolMK2* GetParentBuilding() { return mParentBuilding; };
+		AFGSlugPrinciplesEnergyPoolMK2* GetParentBuilding() { return mParentBuilding; };
+		
 		UPROPERTY(SaveGame)
 		AFGSlugPrinciplesEnergyPoolMK2* mParentBuilding;
 
@@ -29,6 +30,7 @@ public:
 
 		UPROPERTY(SaveGame)
 		UFGFactoryConnectionComponent* mOutputConnection;
+		
 		UPROPERTY(SaveGame)
 		UFGFactoryConnectionComponent* mConnectedConveyor;
 

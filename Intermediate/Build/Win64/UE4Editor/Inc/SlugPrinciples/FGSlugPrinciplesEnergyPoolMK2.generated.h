@@ -18,12 +18,14 @@ class AFGSlugPrinciplesFluidPress;
 #define SatisfactoryModLoader_Plugins_SlugPrinciples_Source_SlugPrinciples_Public_Buildings_FGSlugPrinciplesEnergyPoolMK2_h_16_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetFluidPress); \
+	DECLARE_FUNCTION(execDisconnectFluidPress); \
 	DECLARE_FUNCTION(execHasFluidPress);
 
 
 #define SatisfactoryModLoader_Plugins_SlugPrinciples_Source_SlugPrinciples_Public_Buildings_FGSlugPrinciplesEnergyPoolMK2_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetFluidPress); \
+	DECLARE_FUNCTION(execDisconnectFluidPress); \
 	DECLARE_FUNCTION(execHasFluidPress);
 
 

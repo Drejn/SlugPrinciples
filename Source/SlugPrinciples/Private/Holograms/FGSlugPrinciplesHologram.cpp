@@ -1,7 +1,8 @@
 #include "Holograms/FGSlugPrinciplesHologram.h"
 #include "Utils/SlugPrinciplesLogging.h"
-#include "Buildings/FGSlugPrinciplesEnergyPoolMK1.h"
 #include "Buildings/FGSlugPrinciplesEnergyPoolMK2.h"
+#include "Buildings/FGSlugPrinciplesEnergyPoolMK1.h"
+#include "Buildings/FGSlugPrinciplesEnergyPoolMK1.h"
 
 AFGSlugPrinciplesHologram::AFGSlugPrinciplesHologram() : Super(){
 	this->mValidHitClasses.Add(AFGSlugPrinciplesBuilding::StaticClass());
@@ -35,7 +36,7 @@ bool AFGSlugPrinciplesHologram::TryUpgrade(const FHitResult& hitResult) {
 }
 
 
-bool AFGSlugPrinciplesHologram::IsValidHitResult(const FHitResult& hit) const {
+bool AFGSlugPrinciplesHologram::IsValidHitResult(const FHitResult& hit) const  {
 	//UE_LOG(SlugPrinciplesLog, Warning, TEXT("IsValidHitResult"));
 	AActor* target = hit.GetActor();
 	
@@ -46,6 +47,8 @@ bool AFGSlugPrinciplesHologram::IsValidHitResult(const FHitResult& hit) const {
 			FName RecipeName = "Recipe_EnergyPoolMK2_C";
 			//UE_LOG(SlugPrinciplesLog, Warning, TEXT("Target recipe: %s"), *RecipeName.ToString());
 			FName RecipeName2 = "Recipe_FluidPress_C";
+
+
 			if (mRecipe->GetFName() == RecipeName){
 				if (target->IsA(AFGSlugPrinciplesEnergyPoolMK1::StaticClass())) {
 					return true;
@@ -55,12 +58,12 @@ bool AFGSlugPrinciplesHologram::IsValidHitResult(const FHitResult& hit) const {
 				if (target->IsA(AFGSlugPrinciplesEnergyPoolMK2::StaticClass())) {
 					//ParentBuilding = Cast<AFGSlugPrinciplesBuilding>(target);
 					AFGSlugPrinciplesEnergyPoolMK2* AttachmentCheck = Cast<AFGSlugPrinciplesEnergyPoolMK2>(target);
-					if(!AttachmentCheck->HasFluidPress()){
+					if (!AttachmentCheck->HasFluidPress()) {
 						return true;
 					}
 				}
 			}
-
+			
 		}
 	}
 	return false;
@@ -89,6 +92,9 @@ void AFGSlugPrinciplesHologram::ConfigureActor(class AFGBuildable* inBuildable) 
 			EnergyPool->mFluidPress->mParentBuilding = EnergyPool;
 		}
 	}
+
+
+
 	//ReplacedActor->Destroy();
 	//CastedActor->Execute_Upgrade(CastedActor, inBuildable);
 

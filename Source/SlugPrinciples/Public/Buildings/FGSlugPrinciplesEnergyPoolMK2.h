@@ -17,9 +17,13 @@ class SLUGPRINCIPLES_API AFGSlugPrinciplesEnergyPoolMK2 : public AFGSlugPrincipl
 	
 public:
 	UFUNCTION(BlueprintCallable, Category = "FactoryGame|Slug Principles Building|Energy Pool MK2")
-	bool HasFluidPress();
+		bool HasFluidPress();
+
+	UFUNCTION(BlueprintCallable, Category = "FactoryGame|Slug Principles Building|Energy Pool MK2")
+	void DisconnectFluidPress();
+
 	UFUNCTION(BlueprintCallable, Category = "FactoryGame|SlugPrinciplesBuilding|EnergyPoolMK2")
-	AFGSlugPrinciplesFluidPress* GetFluidPress() { return mFluidPress; };
+		AFGSlugPrinciplesFluidPress* GetFluidPress() { return mFluidPress; };
 
 	AFGSlugPrinciplesFluidPress* mFluidPress;
 
