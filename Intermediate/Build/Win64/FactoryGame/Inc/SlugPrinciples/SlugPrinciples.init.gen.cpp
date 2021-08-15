@@ -25,7 +25,7 @@ void EmptyLinkFunctionForGeneratedCodeSlugPrinciples_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xB87315A4,
+				0x55AC5D1A,
 				0x8AF6F647,
 				METADATA_PARAMS(nullptr, 0)
 			};

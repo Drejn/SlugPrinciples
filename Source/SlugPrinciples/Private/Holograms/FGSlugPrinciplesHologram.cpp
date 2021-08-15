@@ -9,7 +9,20 @@ AFGSlugPrinciplesHologram::AFGSlugPrinciplesHologram() : Super(){
 	this->SetHidden(true);
 	this->SetReplicates(true);
 	this->mScrollMode = EHologramScrollMode::HSM_ROTATE;
+
 }
+
+
+void AFGSlugPrinciplesHologram::BeginPlay() {
+	
+	Super::BeginPlay();
+
+	
+	
+	
+	
+}
+
 
 bool AFGSlugPrinciplesHologram::TryUpgrade(const FHitResult& hitResult) {
 	//UE_LOG(SlugPrinciplesLog, Warning, TEXT("TryUpgrade"));
@@ -51,20 +64,25 @@ bool AFGSlugPrinciplesHologram::IsValidHitResult(const FHitResult& hit) const  {
 
 			if (mRecipe->GetFName() == RecipeName){
 				if (target->IsA(AFGSlugPrinciplesEnergyPoolMK1::StaticClass())) {
+					
 					return true;
 				}
 			}
 			else if (mRecipe->GetFName() == RecipeName2) {
 				if (target->IsA(AFGSlugPrinciplesEnergyPoolMK2::StaticClass())) {
-					//ParentBuilding = Cast<AFGSlugPrinciplesBuilding>(target);
+					
 					AFGSlugPrinciplesEnergyPoolMK2* AttachmentCheck = Cast<AFGSlugPrinciplesEnergyPoolMK2>(target);
 					if (!AttachmentCheck->HasFluidPress()) {
 						return true;
 					}
 				}
-			}
-			
+			}			
 		}
+		if (EnergyPoolEntranceHologram) {
+			EnergyPoolEntranceHologram->SetActorLocation(this->GetActorLocation());
+			EnergyPoolEntranceHologram->SetActorRotation(this->GetActorRotation());
+		}
+		return Super::IsValidHitResult(hit);
 	}
 	return false;
 }
@@ -73,19 +91,14 @@ bool AFGSlugPrinciplesHologram::IsValidHitResult(const FHitResult& hit) const  {
 
 void AFGSlugPrinciplesHologram::ConfigureActor(class AFGBuildable* inBuildable) const {
 
-	//AActor* ReplacedActor = GetUpgradedActor();
-	//AFGSlugPrinciplesBuilding* CastedActor = Cast< AFGSlugPrinciplesBuilding>(ReplacedActor);
-	if (ReplacedBuilding) {
-		UE_LOG(SlugPrinciplesLog, Warning, TEXT("Replaced Actor found"));
 
-		//UE_LOG(SlugPrinciplesLog, Warning, TEXT(ReplacedBuilding->GetClass()));
-		//UE_LOG(SlugPrinciplesLog, Warning, TEXT());
+	if (ReplacedBuilding) {
 
 		ReplacedBuilding->Execute_Upgrade(ReplacedBuilding,inBuildable);
 
 	}
 	if (inBuildable->IsA(AFGSlugPrinciplesFluidPress::StaticClass())) {
-		UE_LOG(SlugPrinciplesLog, Warning, TEXT("configuring Fluid Press"));
+		
 		if (ParentBuilding->IsA(AFGSlugPrinciplesEnergyPoolMK2::StaticClass())) {
 			AFGSlugPrinciplesEnergyPoolMK2* EnergyPool = Cast<AFGSlugPrinciplesEnergyPoolMK2>(ParentBuilding);
 			EnergyPool->mFluidPress = Cast<AFGSlugPrinciplesFluidPress>(inBuildable);
@@ -93,9 +106,55 @@ void AFGSlugPrinciplesHologram::ConfigureActor(class AFGBuildable* inBuildable) 
 		}
 	}
 
+}
 
 
-	//ReplacedActor->Destroy();
-	//CastedActor->Execute_Upgrade(CastedActor, inBuildable);
+void AFGSlugPrinciplesHologram::SpawnChildren(AActor* hologramOwner, FVector spawnLocation, APawn* hologramInstigator) {
+	
+	
+	if (this->GetRecipe()->GetFName() == "Recipe_EnergyPool_C") {
+		FStringClassReference RecipeClassReference = FStringClassReference(TEXT("/SlugPrinciples/Recipes/Recipe_EnergyPool_Center.Recipe_EnergyPool_Center_C"));
+		if (UClass* RecipeClass = RecipeClassReference.TryLoadClass<UFGRecipe>()) {
+
+			EnergyPoolEntranceHologram = Super::SpawnChildHologramFromRecipe(this, RecipeClass, GetOwner(), this->GetActorLocation());
+			
+
+		}
+	}
+	
+}
+
+AActor* AFGSlugPrinciplesHologram::Construct(TArray< AActor* >& out_children, FNetConstructionID netConstructionID) {
+	
+	UE_LOG(SlugPrinciplesLog, Warning, TEXT("Construct"));
+
+
+	AActor* newActor = Super::Construct(out_children, netConstructionID);
+
+	if (this->GetRecipe()->GetFName() == "Recipe_EnergyPool_C") {
+		UE_LOG(SlugPrinciplesLog, Warning, TEXT("Recipe is Energy Pool"));
+		UE_LOG(SlugPrinciplesLog, Warning, TEXT("%d"),out_children.Num());
+
+		
+		for (int i = 0; i < out_children.Num(); i++) {
+			if (out_children[i]->IsA(AFGBuildableFactory::StaticClass())) {
+				UE_LOG(SlugPrinciplesLog, Warning, TEXT("Child Found"));
+				
+				AFGSlugPrinciplesEnergyPoolMK1* PoolRef = Cast<AFGSlugPrinciplesEnergyPoolMK1>(out_children[i]);
+
+				if (PoolRef) {
+					UE_LOG(SlugPrinciplesLog, Warning, TEXT("Casted to Energy Pool MK1"));
+					EnergyPoolEntrance = Cast<AFGBuildableFactory>(newActor);
+
+					if (EnergyPoolEntrance) {
+
+						UE_LOG(SlugPrinciplesLog, Warning, TEXT("Casted to Energy Pool Entrance"));
+						PoolRef->EnergyPoolEntrance = EnergyPoolEntrance;
+					}
+				}
+			}
+		}
+	}
+	return newActor;
 
 }

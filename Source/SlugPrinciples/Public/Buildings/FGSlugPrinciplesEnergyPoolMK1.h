@@ -13,8 +13,11 @@ UCLASS()
 class SLUGPRINCIPLES_API AFGSlugPrinciplesEnergyPoolMK1 : public AFGSlugPrinciplesBuilding
 {
 	GENERATED_BODY()
+public:
 
+	virtual void BeginPlay() override;
 
-	FText GetLookAtDecription_Implementation(class AFGCharacterPlayer* byCharacter, const FUseState& state) const override;
+		UPROPERTY(BlueprintReadWrite, SaveGame)
+		AFGBuildableFactory* EnergyPoolEntrance;
 	
 };
