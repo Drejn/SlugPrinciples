@@ -20,6 +20,8 @@ void EmptyLinkFunctionForGeneratedCodeFGSlugPrinciplesLib() {}
 	SLUGPRINCIPLES_API UClass* Z_Construct_UClass_UFGSlugPrinciplesLib();
 	FACTORYGAME_API UClass* Z_Construct_UClass_UFGBlueprintFunctionLibrary();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	FACTORYGAME_API UEnum* Z_Construct_UEnum_FactoryGame_EOutlineColor();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_SlugPrinciples_OnWidgetConstruct__DelegateSignature_Statics
 	{
@@ -61,6 +63,15 @@ void EmptyLinkFunctionForGeneratedCodeFGSlugPrinciplesLib() {}
 		}
 		return ReturnFunction;
 	}
+	DEFINE_FUNCTION(UFGSlugPrinciplesLib::execOutlineMultipleActors)
+	{
+		P_GET_TARRAY(AActor*,Z_Param_Actors);
+		P_GET_ENUM(EOutlineColor,Z_Param_color);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UFGSlugPrinciplesLib::OutlineMultipleActors(Z_Param_Actors,EOutlineColor(Z_Param_color));
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UFGSlugPrinciplesLib::execBindOnWidgetConstruct)
 	{
 		P_GET_OBJECT(UClass,Z_Param_WidgetClass);
@@ -75,6 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSlugPrinciplesLib() {}
 		UClass* Class = UFGSlugPrinciplesLib::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "BindOnWidgetConstruct", &UFGSlugPrinciplesLib::execBindOnWidgetConstruct },
+			{ "OutlineMultipleActors", &UFGSlugPrinciplesLib::execOutlineMultipleActors },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -114,6 +126,48 @@ void EmptyLinkFunctionForGeneratedCodeFGSlugPrinciplesLib() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics
+	{
+		struct FGSlugPrinciplesLib_eventOutlineMultipleActors_Parms
+		{
+			TArray<AActor*> Actors;
+			EOutlineColor color;
+		};
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_color;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_color_Underlying;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Actors;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Actors_Inner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics::NewProp_color = { "color", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSlugPrinciplesLib_eventOutlineMultipleActors_Parms, color), Z_Construct_UEnum_FactoryGame_EOutlineColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics::NewProp_color_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics::NewProp_Actors = { "Actors", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FGSlugPrinciplesLib_eventOutlineMultipleActors_Parms, Actors), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics::NewProp_Actors_Inner = { "Actors", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics::NewProp_color,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics::NewProp_color_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics::NewProp_Actors,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics::NewProp_Actors_Inner,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Lib/FGSlugPrinciplesLib.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFGSlugPrinciplesLib, nullptr, "OutlineMultipleActors", nullptr, nullptr, sizeof(FGSlugPrinciplesLib_eventOutlineMultipleActors_Parms), Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UFGSlugPrinciplesLib_NoRegister()
 	{
 		return UFGSlugPrinciplesLib::StaticClass();
@@ -134,6 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSlugPrinciplesLib() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFGSlugPrinciplesLib_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UFGSlugPrinciplesLib_BindOnWidgetConstruct, "BindOnWidgetConstruct" }, // 666211485
+		{ &Z_Construct_UFunction_UFGSlugPrinciplesLib_OutlineMultipleActors, "OutlineMultipleActors" }, // 711208956
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFGSlugPrinciplesLib_Statics::Class_MetaDataParams[] = {
@@ -170,7 +225,7 @@ void EmptyLinkFunctionForGeneratedCodeFGSlugPrinciplesLib() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFGSlugPrinciplesLib, 3285576859);
+	IMPLEMENT_CLASS(UFGSlugPrinciplesLib, 3290769810);
 	template<> SLUGPRINCIPLES_API UClass* StaticClass<UFGSlugPrinciplesLib>()
 	{
 		return UFGSlugPrinciplesLib::StaticClass();

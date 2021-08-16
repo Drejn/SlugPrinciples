@@ -9,6 +9,8 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UUserWidget;
+class AActor;
+enum class EOutlineColor : uint8;
 #ifdef SLUGPRINCIPLES_FGSlugPrinciplesLib_generated_h
 #error "FGSlugPrinciplesLib.generated.h already included, missing '#pragma once' in FGSlugPrinciplesLib.h"
 #endif
@@ -30,11 +32,13 @@ static inline void FOnWidgetConstruct_DelegateWrapper(const FScriptDelegate& OnW
 #define SatisfactoryModLoader_Plugins_SlugPrinciples_Source_SlugPrinciples_Public_Lib_FGSlugPrinciplesLib_h_11_SPARSE_DATA
 #define SatisfactoryModLoader_Plugins_SlugPrinciples_Source_SlugPrinciples_Public_Lib_FGSlugPrinciplesLib_h_11_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execOutlineMultipleActors); \
 	DECLARE_FUNCTION(execBindOnWidgetConstruct);
 
 
 #define SatisfactoryModLoader_Plugins_SlugPrinciples_Source_SlugPrinciples_Public_Lib_FGSlugPrinciplesLib_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execOutlineMultipleActors); \
 	DECLARE_FUNCTION(execBindOnWidgetConstruct);
 
 

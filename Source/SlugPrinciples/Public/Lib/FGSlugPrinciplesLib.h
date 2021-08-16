@@ -12,7 +12,11 @@ class SLUGPRINCIPLES_API UFGSlugPrinciplesLib : public UFGBlueprintFunctionLibra
 public:
 
 	UFUNCTION(BlueprintCallable)
-		static void BindOnWidgetConstruct(TSubclassOf<UUserWidget> WidgetClass, FOnWidgetConstruct Binding);
+	static void BindOnWidgetConstruct(TSubclassOf<UUserWidget> WidgetClass, FOnWidgetConstruct Binding);
 	static FOnWidgetConstruct OnWidgetConstruct;
+
+	UFUNCTION(BlueprintCallable)
+		static void OutlineMultipleActors(TArray<AActor*> Actors, EOutlineColor color);
+
 
 };

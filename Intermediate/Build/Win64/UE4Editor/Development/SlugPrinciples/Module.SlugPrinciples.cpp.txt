@@ -1045,7 +1045,14 @@ D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Intermediate
 D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Source\SlugPrinciples\Public\Utils/SlugPrinciplesLogging.h
 D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Source/SlugPrinciples/Private/Buildings/FGSlugPrinciplesEnergyPoolMK1.cpp
 D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Source\SlugPrinciples\Public\Buildings/FGSlugPrinciplesEnergyPoolMK1.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Source\SlugPrinciples\Public\Buildings/FGSlugPrinciplesEnergyPoolMK1_Base.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGOutlineComponent.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Source\FactoryGame\Public\FGMaterialEffectComponent.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGMaterialEffectComponent.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Intermediate\Build\Win64\UE4Editor\Inc\FactoryGame\FGOutlineComponent.generated.h
+D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesEnergyPoolMK1_Base.generated.h
 D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Intermediate\Build\Win64\UE4Editor\Inc\SlugPrinciples\FGSlugPrinciplesEnergyPoolMK1.generated.h
+D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Source/SlugPrinciples/Private/Buildings/FGSlugPrinciplesEnergyPoolMK1_Base.cpp
 D:/Documenti/Repos/Dev/SatisfactoryModLoader/Plugins/SlugPrinciples/Source/SlugPrinciples/Private/Buildings/FGSlugPrinciplesEnergyPoolMK2.cpp
 D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Source\SlugPrinciples\Public\Buildings/FGSlugPrinciplesEnergyPoolMK2.h
 D:\Documenti\Repos\Dev\SatisfactoryModLoader\Plugins\SlugPrinciples\Source\SlugPrinciples\Public\Buildings/FGSlugPrinciplesFluidPress.h

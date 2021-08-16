@@ -3,8 +3,10 @@
 #include "Hologram/FGFactoryHologram.h"
 #include "Buildables/FGBuildableFactory.h"
 #include "Buildings/FGSlugPrinciplesBuilding.h"
+#include "Buildings/FGSlugPrinciplesEnergyPoolMK2.h"
+#include "Buildings/FGSlugPrinciplesEnergyPoolMK1.h"
+#include "Buildings/FGSlugPrinciplesEnergyPoolMK1_Base.h"
 #include "FGSlugPrinciplesHologram.generated.h"
-
 
 UCLASS(Blueprintable)
 class SLUGPRINCIPLES_API AFGSlugPrinciplesHologram : public AFGBuildableHologram

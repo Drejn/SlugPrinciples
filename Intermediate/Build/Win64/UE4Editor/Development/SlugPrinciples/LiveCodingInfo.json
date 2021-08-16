@@ -4,6 +4,7 @@
 		"Module.SlugPrinciples.cpp.obj": [
 			"FGSlugPrinciplesBuilding.cpp.obj",
 			"FGSlugPrinciplesEnergyPoolMK1.cpp.obj",
+			"FGSlugPrinciplesEnergyPoolMK1_Base.cpp.obj",
 			"FGSlugPrinciplesEnergyPoolMK2.cpp.obj",
 			"FGSlugPrinciplesFluidPress.cpp.obj",
 			"FGSlugPrinciplesModularStorage.cpp.obj",
@@ -17,6 +18,7 @@
 		"Module.SlugPrinciples.gen.cpp.obj": [
 			"FGSlugPrinciplesBuilding.gen.cpp.obj",
 			"FGSlugPrinciplesEnergyPoolMK1.gen.cpp.obj",
+			"FGSlugPrinciplesEnergyPoolMK1_Base.gen.cpp.obj",
 			"FGSlugPrinciplesEnergyPoolMK2.gen.cpp.obj",
 			"FGSlugPrinciplesFluidPress.gen.cpp.obj",
 			"FGSlugPrinciplesHologram.gen.cpp.obj",

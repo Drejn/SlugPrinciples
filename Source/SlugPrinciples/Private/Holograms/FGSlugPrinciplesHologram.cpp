@@ -1,8 +1,5 @@
 #include "Holograms/FGSlugPrinciplesHologram.h"
-#include "Utils/SlugPrinciplesLogging.h"
-#include "Buildings/FGSlugPrinciplesEnergyPoolMK2.h"
-#include "Buildings/FGSlugPrinciplesEnergyPoolMK1.h"
-#include "Buildings/FGSlugPrinciplesEnergyPoolMK1.h"
+
 
 AFGSlugPrinciplesHologram::AFGSlugPrinciplesHologram() : Super(){
 	this->mValidHitClasses.Add(AFGSlugPrinciplesBuilding::StaticClass());
@@ -17,10 +14,6 @@ void AFGSlugPrinciplesHologram::BeginPlay() {
 	
 	Super::BeginPlay();
 
-	
-	
-	
-	
 }
 
 
@@ -130,7 +123,7 @@ AActor* AFGSlugPrinciplesHologram::Construct(TArray< AActor* >& out_children, FN
 
 
 	AActor* newActor = Super::Construct(out_children, netConstructionID);
-
+	
 	if (this->GetRecipe()->GetFName() == "Recipe_EnergyPool_C") {
 		UE_LOG(SlugPrinciplesLog, Warning, TEXT("Recipe is Energy Pool"));
 		UE_LOG(SlugPrinciplesLog, Warning, TEXT("%d"),out_children.Num());
@@ -150,11 +143,13 @@ AActor* AFGSlugPrinciplesHologram::Construct(TArray< AActor* >& out_children, FN
 
 						UE_LOG(SlugPrinciplesLog, Warning, TEXT("Casted to Energy Pool Entrance"));
 						PoolRef->EnergyPoolEntrance = EnergyPoolEntrance;
+
+						//EnergyPoolEntrance->EnergyPool = PoolRef;
 					}
 				}
 			}
 		}
 	}
-	return newActor;
+	return nullptr;
 
 }

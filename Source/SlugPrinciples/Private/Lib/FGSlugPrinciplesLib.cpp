@@ -2,6 +2,7 @@
 #include "Lib/FGSlugPrinciplesLib.h"
 #include "Patching/BlueprintHookManager.h"
 #include "Patching/BlueprintHookHelper.h"
+#include "FGOutlineComponent.h"
 
 void UFGSlugPrinciplesLib::BindOnWidgetConstruct(const TSubclassOf<UUserWidget> WidgetClass, FOnWidgetConstruct Binding) {
 	if (!WidgetClass)
@@ -15,4 +16,15 @@ void UFGSlugPrinciplesLib::BindOnWidgetConstruct(const TSubclassOf<UUserWidget> 
 	HookManager->HookBlueprintFunction(ConstructFunction, [Binding](FBlueprintHookHelper& HookHelper) {
 		Binding.ExecuteIfBound(Cast<UUserWidget>(HookHelper.GetContext()));
 		}, EPredefinedHookOffset::Return);
+}
+
+
+void UFGSlugPrinciplesLib::OutlineMultipleActors(TArray<AActor*> Actors, EOutlineColor color) {
+
+	if (Actors.Num() > 0) {
+		
+			UWorld* world = Actors[0]->GetWorld();
+
+			UFGOutlineComponent::Get(world)->ShowMultiActorOutline(Actors, color);
+	}
 }

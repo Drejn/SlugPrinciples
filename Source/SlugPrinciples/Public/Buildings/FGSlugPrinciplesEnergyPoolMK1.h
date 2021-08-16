@@ -2,8 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
-#include "Buildings/FGSlugPrinciplesBuilding.h"
+#include "Buildings/FGSlugPrinciplesEnergyPoolMK1_Base.h"
 #include "FGSlugPrinciplesEnergyPoolMK1.generated.h"
 
 /**
@@ -15,9 +14,10 @@ class SLUGPRINCIPLES_API AFGSlugPrinciplesEnergyPoolMK1 : public AFGSlugPrincipl
 	GENERATED_BODY()
 public:
 
-	virtual void BeginPlay() override;
 
-		UPROPERTY(BlueprintReadWrite, SaveGame)
+	UPROPERTY(BlueprintReadWrite, SaveGame)
 		AFGBuildableFactory* EnergyPoolEntrance;
 	
+	virtual void StartIsLookedAtForDismantle_Implementation(class AFGCharacterPlayer* byCharacter) override;
+	virtual void StopIsLookedAtForDismantle_Implementation(class AFGCharacterPlayer* byCharacter) override;
 };
