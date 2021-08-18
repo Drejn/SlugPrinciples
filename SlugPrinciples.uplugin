@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 3,
-	"VersionName": "3.9.7",
+	"VersionName": "3.9.9",
 	"FriendlyName": "SlugPrinciples",
 	"Description": "",
 	"Category": "Other",
@@ -14,7 +14,7 @@
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
-	"SemVersion": "3.9.7",
+	"SemVersion": "3.9.9",
 	"Modules": [
 		{
 			"Name": "SlugPrinciples",
