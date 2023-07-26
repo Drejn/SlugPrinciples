@@ -3,7 +3,7 @@
 #include "Hologram/FGFactoryHologram.h"
 #include "Buildables/FGBuildableFactory.h"
 #include "Buildings/FGSlugPrinciplesBuilding.h"
-#include "Buildings/FGSlugPrinciplesEnergyPoolMK2.h"
+#include "Buildings/FGSlugPrinciplesGEM_MK2.h"
 #include "Buildings/FGSlugPrinciplesGEM_MK1.h"
 #include "Buildings/FGSlugPrinciplesGEM_MK1_Base.h"
 #include "FGSlugPrinciplesHologram.generated.h"

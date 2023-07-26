@@ -5,13 +5,13 @@
 #include "CoreMinimal.h"
 #include "Buildings/FGSlugPrinciplesBuilding.h"
 #include "Buildings/FGSlugPrinciplesFluidPress.h"
-#include "FGSlugPrinciplesEnergyPoolMK2.generated.h"
+#include "FGSlugPrinciplesGEM_MK2.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class SLUGPRINCIPLES_API AFGSlugPrinciplesEnergyPoolMK2 : public AFGSlugPrinciplesBuilding
+class SLUGPRINCIPLES_API AFGSlugPrinciplesGEM_MK2 : public AFGSlugPrinciplesBuilding
 {
 	GENERATED_BODY()
 	

@@ -28,8 +28,8 @@ bool AFGSlugPrinciplesHologram::TryUpgrade(const FHitResult& hitResult) {
 			ReplacedBuilding = Cast<AFGSlugPrinciplesBuilding>(target);
 			rot = target->GetActorRotation();
 			loc = target->GetActorLocation();
-			if (target->IsA(AFGSlugPrinciplesEnergyPoolMK2::StaticClass())) {
-				ParentBuilding = Cast<AFGSlugPrinciplesEnergyPoolMK2>(target);
+			if (target->IsA(AFGSlugPrinciplesGEM_MK2::StaticClass())) {
+				ParentBuilding = Cast<AFGSlugPrinciplesGEM_MK2>(target);
 			}
 			
 			hololocation = target->GetTransform();
@@ -62,9 +62,9 @@ bool AFGSlugPrinciplesHologram::IsValidHitResult(const FHitResult& hit) const  {
 				}
 			}
 			else if (mRecipe->GetFName() == RecipeName2) {
-				if (target->IsA(AFGSlugPrinciplesEnergyPoolMK2::StaticClass())) {
+				if (target->IsA(AFGSlugPrinciplesGEM_MK2::StaticClass())) {
 					
-					AFGSlugPrinciplesEnergyPoolMK2* AttachmentCheck = Cast<AFGSlugPrinciplesEnergyPoolMK2>(target);
+					AFGSlugPrinciplesGEM_MK2* AttachmentCheck = Cast<AFGSlugPrinciplesGEM_MK2>(target);
 					if (!AttachmentCheck->HasFluidPress()) {
 						return true;
 					}
@@ -98,8 +98,8 @@ void AFGSlugPrinciplesHologram::ConfigureActor(class AFGBuildable* inBuildable) 
 	}
 	if (inBuildable->IsA(AFGSlugPrinciplesFluidPress::StaticClass())) {
 		
-		if (ParentBuilding->IsA(AFGSlugPrinciplesEnergyPoolMK2::StaticClass())) {
-			AFGSlugPrinciplesEnergyPoolMK2* GEM = Cast<AFGSlugPrinciplesEnergyPoolMK2>(ParentBuilding);
+		if (ParentBuilding->IsA(AFGSlugPrinciplesGEM_MK2::StaticClass())) {
+			AFGSlugPrinciplesGEM_MK2* GEM = Cast<AFGSlugPrinciplesGEM_MK2>(ParentBuilding);
 			GEM->mFluidPress = Cast<AFGSlugPrinciplesFluidPress>(inBuildable);
 			GEM->mFluidPress->mParentBuilding = GEM;
 		}
