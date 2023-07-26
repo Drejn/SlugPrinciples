@@ -56,7 +56,7 @@ bool AFGSlugPrinciplesHologram::IsValidHitResult(const FHitResult& hit) const  {
 
 
 			if (mRecipe->GetFName() == RecipeName){
-				if (target->IsA(AFGSlugPrinciplesEnergyPoolMK1::StaticClass())) {
+				if (target->IsA(AFGSlugPrinciplesGEM_MK1::StaticClass())) {
 					
 					return true;
 				}
@@ -70,15 +70,15 @@ bool AFGSlugPrinciplesHologram::IsValidHitResult(const FHitResult& hit) const  {
 					}
 					return false;
 				}
-				else if (target->IsA(AFGSlugPrinciplesEnergyPoolMK1::StaticClass())) {
+				else if (target->IsA(AFGSlugPrinciplesGEM_MK1::StaticClass())) {
 					return false;
 				}
 			}			
 		}
 		else if (mRecipe->GetFName() != "Recipe_EnergyPoolMK2_C" && mRecipe->GetFName() != "Recipe_FluidPress_C") {
-			if (EnergyPoolEntranceHologram) {
-				EnergyPoolEntranceHologram->SetActorLocation(this->GetActorLocation());
-				EnergyPoolEntranceHologram->SetActorRotation(this->GetActorRotation());
+			if (GEMEntranceHologram) {
+				GEMEntranceHologram->SetActorLocation(this->GetActorLocation());
+				GEMEntranceHologram->SetActorRotation(this->GetActorRotation());
 			}
 			return Super::IsValidHitResult(hit);
 		}		
@@ -99,9 +99,9 @@ void AFGSlugPrinciplesHologram::ConfigureActor(class AFGBuildable* inBuildable) 
 	if (inBuildable->IsA(AFGSlugPrinciplesFluidPress::StaticClass())) {
 		
 		if (ParentBuilding->IsA(AFGSlugPrinciplesEnergyPoolMK2::StaticClass())) {
-			AFGSlugPrinciplesEnergyPoolMK2* EnergyPool = Cast<AFGSlugPrinciplesEnergyPoolMK2>(ParentBuilding);
-			EnergyPool->mFluidPress = Cast<AFGSlugPrinciplesFluidPress>(inBuildable);
-			EnergyPool->mFluidPress->mParentBuilding = EnergyPool;
+			AFGSlugPrinciplesEnergyPoolMK2* GEM = Cast<AFGSlugPrinciplesEnergyPoolMK2>(ParentBuilding);
+			GEM->mFluidPress = Cast<AFGSlugPrinciplesFluidPress>(inBuildable);
+			GEM->mFluidPress->mParentBuilding = GEM;
 		}
 	}
 
@@ -115,7 +115,7 @@ void AFGSlugPrinciplesHologram::SpawnChildren(AActor* hologramOwner, FVector spa
 		FStringClassReference RecipeClassReference = FStringClassReference(TEXT("/SlugPrinciples/Recipes/Recipe_EnergyPool_Center.Recipe_EnergyPool_Center_C"));
 		if (UClass* RecipeClass = RecipeClassReference.TryLoadClass<UFGRecipe>()) {
 
-			EnergyPoolEntranceHologram = Super::SpawnChildHologramFromRecipe(this, RecipeClass, GetOwner(), this->GetActorLocation());
+			GEMEntranceHologram = Super::SpawnChildHologramFromRecipe(this, RecipeClass, GetOwner(), this->GetActorLocation());
 			
 
 		}
@@ -135,14 +135,14 @@ AActor* AFGSlugPrinciplesHologram::Construct(TArray< AActor* >& out_children, FN
 		for (int i = 0; i < out_children.Num(); i++) {
 			if (out_children[i]->IsA(AFGBuildableFactory::StaticClass())) {
 				
-				AFGSlugPrinciplesEnergyPoolMK1* PoolRef = Cast<AFGSlugPrinciplesEnergyPoolMK1>(out_children[i]);
+				AFGSlugPrinciplesGEM_MK1* PoolRef = Cast<AFGSlugPrinciplesGEM_MK1>(out_children[i]);
 
 				if (PoolRef) {
-					EnergyPoolEntrance = Cast<AFGBuildableFactory>(newActor);
+					GEMEntrance = Cast<AFGBuildableFactory>(newActor);
 
-					if (EnergyPoolEntrance) {
+					if (GEMEntrance) {
 
-						PoolRef->EnergyPoolEntrance = EnergyPoolEntrance;
+						PoolRef->GEMEntrance = GEMEntrance;
 
 						//EnergyPoolEntrance->EnergyPool = PoolRef;
 					}

@@ -4,8 +4,8 @@
 #include "Buildables/FGBuildableFactory.h"
 #include "Buildings/FGSlugPrinciplesBuilding.h"
 #include "Buildings/FGSlugPrinciplesEnergyPoolMK2.h"
-#include "Buildings/FGSlugPrinciplesEnergyPoolMK1.h"
-#include "Buildings/FGSlugPrinciplesEnergyPoolMK1_Base.h"
+#include "Buildings/FGSlugPrinciplesGEM_MK1.h"
+#include "Buildings/FGSlugPrinciplesGEM_MK1_Base.h"
 #include "FGSlugPrinciplesHologram.generated.h"
 
 UCLASS(Blueprintable)
@@ -34,9 +34,9 @@ public:
 	//Used for attachments
 	AFGSlugPrinciplesBuilding* ParentBuilding;
 	
-	AFGBuildableFactory* EnergyPoolEntrance;
+	AFGBuildableFactory* GEMEntrance;
 		
-	class AFGHologram* EnergyPoolEntranceHologram;
+	class AFGHologram* GEMEntranceHologram;
 		
 
 	FVector loc;
