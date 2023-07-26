@@ -16,6 +16,7 @@ class SLUGPRINCIPLES_API AFGSlugPrinciplesFluidPress : public AFGSlugPrinciplesB
 {
 	GENERATED_BODY()
 public:
+
 		UFUNCTION(BlueprintCallable, Category = "FactoryGame|Slug Principles Building|Fluid Press")
 		AFGSlugPrinciplesGEM_MK2* GetParentBuilding() { return mParentBuilding; };
 		
