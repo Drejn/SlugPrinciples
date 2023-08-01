@@ -1,10 +1,10 @@
 #pragma once
 
-#include "Buildables/FGBuildableManufacturer.h"
+#include "Buildables/FGBuildableFactory.h"
 #include "FGSlugPrinciplesBuilding.generated.h"
 
 UCLASS(Blueprintable)
-class SLUGPRINCIPLES_API AFGSlugPrinciplesBuilding : public AFGBuildableManufacturer
+class SLUGPRINCIPLES_API AFGSlugPrinciplesBuilding : public AFGBuildableFactory
 {
 	GENERATED_BODY()
 public:
@@ -12,30 +12,37 @@ public:
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
+	//Indicates if the building is able to Flux Surge
+	UPROPERTY(EditAnywhere, SaveGame)
+	bool FluxSurgeEnabled;
 
 	//Stores the quantity of Crystal Flux Reserved by the building
-	UPROPERTY(BlueprintReadWrite, SaveGame)
+	UPROPERTY(EditAnywhere, SaveGame)
 	int CF_Reservation;
 
 	//Stores the number of crafts required before a Flux Surge
-	UPROPERTY(BlueprintReadWrite, SaveGame)
+	UPROPERTY(EditAnywhere, SaveGame)
 	int FluxSurgeThreshold;
 
 	//Stores the duration a Flux Surge
-	UPROPERTY(BlueprintReadWrite, SaveGame)
-	float FluxSurgeDuration;
+	UPROPERTY(EditAnywhere, SaveGame)
+		float FluxSurgeDuration;
 
 	//Indicates if the building is currently in a Flux Surge
-	UPROPERTY(BlueprintReadWrite, SaveGame)
-	bool isFluxSurging;
+	UPROPERTY(EditAnywhere, SaveGame, Replicated)
+		bool isFluxSurging;
+
+	//Indicates what's the bonus production increment for this building
+	UPROPERTY(EditAnywhere, SaveGame)
+		float SurgeProductionBonus;
 
 	//Returns true if the building has reserved Crystal Flux
 	UFUNCTION(BlueprintCallable, Category = "FactoryGame|Slug Principles Building|General")
-	bool HasReservedCF();
+		bool HasReservedCF();
 
 	//Stores the state of the building, if it has enough Crystal Flux it becomes true and Crystal Flux is reserved
-	UPROPERTY(BlueprintReadWrite, SaveGame, Replicated)
-	bool bReserved;
+	UPROPERTY(EditAnywhere, SaveGame, Replicated)
+		bool bReserved;
 
 
 };

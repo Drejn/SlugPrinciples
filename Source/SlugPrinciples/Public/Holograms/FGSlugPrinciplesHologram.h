@@ -9,7 +9,7 @@
 #include "FGSlugPrinciplesHologram.generated.h"
 
 UCLASS(Blueprintable)
-class SLUGPRINCIPLES_API AFGSlugPrinciplesHologram : public AFGBuildableHologram
+class SLUGPRINCIPLES_API AFGSlugPrinciplesHologram : public AFGFactoryHologram
 {
 	GENERATED_BODY()
 public:
@@ -27,6 +27,7 @@ public:
 	virtual void SpawnChildren(AActor* hologramOwner, FVector spawnLocation, APawn* hologramInstigator) override;
 	virtual AActor* Construct(TArray< AActor* >& out_children, FNetConstructionID netConstructionID) override;
 
+	FName fBuildingRecipe;
 
 	//Used for upgrades
 	AFGSlugPrinciplesBuilding* ReplacedBuilding;
@@ -37,7 +38,7 @@ public:
 	AFGBuildableFactory* GEMEntrance;
 		
 	class AFGHologram* GEMEntranceHologram;
-		
+	
 
 	FVector loc;
 	FRotator rot;

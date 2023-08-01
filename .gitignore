@@ -74,4 +74,5 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 
 # Models that would infringe Satisfactory IP
-Mods/SlugPrinciples/Content/Models/*
+Mods/SlugPrinciples/Content/Meshes/*
+Mods/SlugPrinciples/Content/Icons/*
