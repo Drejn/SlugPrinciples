@@ -1,5 +1,5 @@
 #include "Holograms/FGSlugPrinciplesHologram.h"
-
+#include "Utils/LogSlugPrinciples.h"
 
 AFGSlugPrinciplesHologram::AFGSlugPrinciplesHologram() : Super(){
 	this->mValidHitClasses.Add(AFGSlugPrinciplesBuilding::StaticClass());
@@ -116,11 +116,12 @@ void AFGSlugPrinciplesHologram::ConfigureActor(class AFGBuildable* inBuildable) 
 
 void AFGSlugPrinciplesHologram::SpawnChildren(AActor* hologramOwner, FVector spawnLocation, APawn* hologramInstigator) {
 	
+		UE_LOG(LogSlugPrinciples, Verbose, TEXT("%s"),*this->GetRecipe()->GetFName().ToString());
 		if (this->GetRecipe()->GetFName() == "Recipe_GEM_C") {
 			FStringClassReference RecipeClassReference = FStringClassReference(TEXT("/SlugPrinciples/Recipes/Recipe_GEM_Center.Recipe_GEM_Center_C"));
 			UClass* RecipeClass = RecipeClassReference.TryLoadClass<UFGRecipe>();
 			if (RecipeClass) {
-
+				UE_LOG(LogSlugPrinciples, All, TEXT("Recipe found: "), *RecipeClass->GetFName().ToString());
 				GEMEntranceHologram = Super::SpawnChildHologramFromRecipe(this, RecipeClass, GetOwner(), this->GetActorLocation());
 
 
@@ -132,7 +133,6 @@ void AFGSlugPrinciplesHologram::SpawnChildren(AActor* hologramOwner, FVector spa
 
 AActor* AFGSlugPrinciplesHologram::Construct(TArray< AActor* >& out_children, FNetConstructionID netConstructionID) {
 	
-//	UE_LOG(SlugPrinciplesLog, Warning, TEXT("Construct"));
 	
 	AActor* newActor = Super::Construct(out_children, netConstructionID);
 	
