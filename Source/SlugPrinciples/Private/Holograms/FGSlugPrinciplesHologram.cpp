@@ -116,12 +116,12 @@ void AFGSlugPrinciplesHologram::ConfigureActor(class AFGBuildable* inBuildable) 
 
 void AFGSlugPrinciplesHologram::SpawnChildren(AActor* hologramOwner, FVector spawnLocation, APawn* hologramInstigator) {
 	
-		UE_LOG(LogSlugPrinciples, Verbose, TEXT("%s"),*this->GetRecipe()->GetFName().ToString());
+		UE_LOG(LogSlugPrinciples, Warning, TEXT("%s"),*this->GetRecipe()->GetFName().ToString());
 		if (this->GetRecipe()->GetFName() == "Recipe_GEM_C") {
-			FStringClassReference RecipeClassReference = FStringClassReference(TEXT("/SlugPrinciples/Recipes/Recipe_GEM_Center.Recipe_GEM_Center_C"));
+			FStringClassReference RecipeClassReference = FStringClassReference(TEXT("/SlugPrinciples/Recipes/Recipe_GEM_Base.Recipe_GEM_Base_C"));
 			UClass* RecipeClass = RecipeClassReference.TryLoadClass<UFGRecipe>();
 			if (RecipeClass) {
-				UE_LOG(LogSlugPrinciples, All, TEXT("Recipe found: "), *RecipeClass->GetFName().ToString());
+				UE_LOG(LogSlugPrinciples, Warning, TEXT("Recipe found: %s"), *RecipeClass->GetFName().ToString());
 				GEMEntranceHologram = Super::SpawnChildHologramFromRecipe(this, RecipeClass, GetOwner(), this->GetActorLocation());
 
 
@@ -135,10 +135,11 @@ AActor* AFGSlugPrinciplesHologram::Construct(TArray< AActor* >& out_children, FN
 	
 	
 	AActor* newActor = Super::Construct(out_children, netConstructionID);
-	
+	UE_LOG(LogSlugPrinciples, Warning, TEXT("Construct: %s"), *this->GetRecipe()->GetFName().ToString());
 	if (this->GetRecipe()->GetFName() == "Recipe_GEM_C") {
 
 		for (int i = 0; i < out_children.Num(); i++) {
+			UE_LOG(LogSlugPrinciples, Warning, TEXT("Construct: %s"), *out_children[i]->GetFName().ToString());
 			if (out_children[i]->IsA(AFGBuildableFactory::StaticClass())) {
 				
 				AFGSlugPrinciplesGEM_MK1* PoolRef = Cast<AFGSlugPrinciplesGEM_MK1>(out_children[i]);
