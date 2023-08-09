@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Hologram/FGFactoryHologram.h"
+#include "Hologram/FGBuildableHologram.h"
 #include "Buildables/FGBuildableFactory.h"
 #include "Buildings/FGSlugPrinciplesBuilding.h"
 #include "Buildings/FGSlugPrinciplesGEM_MK2.h"
@@ -9,7 +9,7 @@
 #include "FGSlugPrinciplesHologram.generated.h"
 
 UCLASS(Blueprintable)
-class SLUGPRINCIPLES_API AFGSlugPrinciplesHologram : public AFGFactoryHologram
+class SLUGPRINCIPLES_API AFGSlugPrinciplesHologram : public AFGBuildableHologram
 {
 	GENERATED_BODY()
 public:
@@ -35,9 +35,9 @@ public:
 	//Used for attachments
 	AFGSlugPrinciplesBuilding* ParentBuilding;
 	
-	AFGBuildableFactory* GEMEntrance;
+	AFGBuildableFactory* SPGEMEntrance;
 		
-	class AFGHologram* GEMEntranceHologram;
+	class AFGHologram* SPGEMEntranceHologram;
 	
 
 	FVector loc;

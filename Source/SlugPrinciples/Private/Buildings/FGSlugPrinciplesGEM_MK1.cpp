@@ -14,7 +14,7 @@ void AFGSlugPrinciplesGEM_MK1::StartIsLookedAtForDismantle_Implementation(class 
 	TArray<AActor*> actors;
 
 	actors.Add(this);
-	actors.Add(GEMEntrance);
+	actors.Add(SPGEMEntrance);
 
 	UFGOutlineComponent::Get(GetWorld())->ShowMultiActorOutline(actors, EOutlineColor::OC_RED);
 
@@ -24,7 +24,7 @@ void AFGSlugPrinciplesGEM_MK1::StopIsLookedAtForDismantle_Implementation(class A
 	TArray<AActor*> actors;
 
 	actors.Add(this);
-	actors.Add(GEMEntrance);
+	actors.Add(SPGEMEntrance);
 
 	UFGOutlineComponent::Get(GetWorld())->ShowMultiActorOutline(actors, EOutlineColor::OC_NONE);
 }

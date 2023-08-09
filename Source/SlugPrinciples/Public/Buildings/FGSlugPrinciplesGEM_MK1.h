@@ -16,7 +16,7 @@ public:
 
 
 	UPROPERTY(BlueprintReadWrite, SaveGame)
-	AFGBuildableFactory* GEMEntrance;
+	AFGBuildableFactory* SPGEMEntrance;
 	
 	virtual void BeginPlay() override;
 

@@ -3,8 +3,10 @@
 
 AFGSlugPrinciplesHologram::AFGSlugPrinciplesHologram() : Super(){
 	this->mValidHitClasses.Add(AFGSlugPrinciplesBuilding::StaticClass());
+	this->mRecipe = nullptr;
 	this->SetHidden(true);
-	this->SetReplicates(true);
+	this->bReplicates = true;
+
 //	this->mScrollMode = EHologramScrollMode::HSM_ROTATE;
 
 }
@@ -80,9 +82,9 @@ bool AFGSlugPrinciplesHologram::IsValidHitResult(const FHitResult& hit) const  {
 			}			
 		}
 		else if (this->GetRecipe()->GetFName() != "Recipe_GEMMK2_C" && this->GetRecipe()->GetFName() != "Recipe_FluidPress_C") {
-			if (GEMEntranceHologram) {
-				GEMEntranceHologram->SetActorLocation(this->GetActorLocation());
-				GEMEntranceHologram->SetActorRotation(this->GetActorRotation());
+			if (SPGEMEntranceHologram) {
+				SPGEMEntranceHologram->SetActorLocation(this->GetActorLocation());
+				SPGEMEntranceHologram->SetActorRotation(this->GetActorRotation());
 			}
 			return Super::IsValidHitResult(hit);
 		}		
@@ -104,9 +106,9 @@ void AFGSlugPrinciplesHologram::ConfigureActor(class AFGBuildable* inBuildable) 
 	if (inBuildable->IsA(AFGSlugPrinciplesFluidPress::StaticClass())) {
 		
 		if (ParentBuilding->IsA(AFGSlugPrinciplesGEM_MK2::StaticClass())) {
-			AFGSlugPrinciplesGEM_MK2* GEM = Cast<AFGSlugPrinciplesGEM_MK2>(ParentBuilding);
-			GEM->mFluidPress = Cast<AFGSlugPrinciplesFluidPress>(inBuildable);
-			GEM->mFluidPress->mParentBuilding = GEM;
+			AFGSlugPrinciplesGEM_MK2* SPGEM = Cast<AFGSlugPrinciplesGEM_MK2>(ParentBuilding);
+			SPGEM->mFluidPress = Cast<AFGSlugPrinciplesFluidPress>(inBuildable);
+			SPGEM->mFluidPress->mParentBuilding = SPGEM;
 		}
 	}
 	
@@ -116,14 +118,15 @@ void AFGSlugPrinciplesHologram::ConfigureActor(class AFGBuildable* inBuildable) 
 
 void AFGSlugPrinciplesHologram::SpawnChildren(AActor* hologramOwner, FVector spawnLocation, APawn* hologramInstigator) {
 	
-		UE_LOG(LogSlugPrinciples, Warning, TEXT("%s"),*this->GetRecipe()->GetFName().ToString());
 		if (this->GetRecipe()->GetFName() == "Recipe_GEM_C") {
 			FStringClassReference RecipeClassReference = FStringClassReference(TEXT("/SlugPrinciples/Recipes/Recipe_GEM_Base.Recipe_GEM_Base_C"));
 			UClass* RecipeClass = RecipeClassReference.TryLoadClass<UFGRecipe>();
 			if (RecipeClass) {
-				UE_LOG(LogSlugPrinciples, Warning, TEXT("Recipe found: %s"), *RecipeClass->GetFName().ToString());
-				GEMEntranceHologram = Super::SpawnChildHologramFromRecipe(this, RecipeClass, GetOwner(), this->GetActorLocation());
+				SPGEMEntranceHologram = Cast< AFGHologram > (Super::SpawnChildHologramFromRecipe(this, RecipeClass, hologramOwner, this->GetActorLocation()));
 
+				if (!GetHologramChildren().Contains(SPGEMEntranceHologram)) {
+					AddChild(SPGEMEntranceHologram);
+				}
 
 			}
 		}
@@ -132,32 +135,44 @@ void AFGSlugPrinciplesHologram::SpawnChildren(AActor* hologramOwner, FVector spa
 }
 
 AActor* AFGSlugPrinciplesHologram::Construct(TArray< AActor* >& out_children, FNetConstructionID netConstructionID) {
-	
+	/*
 	
 	AActor* newActor = Super::Construct(out_children, netConstructionID);
-	UE_LOG(LogSlugPrinciples, Warning, TEXT("Construct: %s"), *this->GetRecipe()->GetFName().ToString());
+	UE_LOG(LogSlugPrinciples, Warning, TEXT("Construct Actor: %s"), *newActor->GetFName().ToString());
+
 	if (this->GetRecipe()->GetFName() == "Recipe_GEM_C") {
-
+		
+		UE_LOG(LogSlugPrinciples, Warning, TEXT("Construct Child: %d"), out_children.Num())
 		for (int i = 0; i < out_children.Num(); i++) {
-			UE_LOG(LogSlugPrinciples, Warning, TEXT("Construct: %s"), *out_children[i]->GetFName().ToString());
-			if (out_children[i]->IsA(AFGBuildableFactory::StaticClass())) {
-				
-				AFGSlugPrinciplesGEM_MK1* PoolRef = Cast<AFGSlugPrinciplesGEM_MK1>(out_children[i]);
+			UE_LOG(LogSlugPrinciples, Warning, TEXT("Construct Child: %d"), out_children.Num());
+			if (out_children[i]) {
+				if (out_children[i]->IsA(AFGBuildableFactory::StaticClass())) {
 
-				if (PoolRef) {
-					GEMEntrance = Cast<AFGBuildableFactory>(newActor);
+					AFGSlugPrinciplesGEM_MK1* PoolRef = Cast<AFGSlugPrinciplesGEM_MK1>(newActor);
 
-					if (GEMEntrance) {
+					if (PoolRef) {
+						SPGEMEntrance = Cast<AFGBuildableFactory>(out_children[i]);
 
-						PoolRef->GEMEntrance = GEMEntrance;
+						if (SPGEMEntrance) {
 
-						//EnergyPoolEntrance->EnergyPool = PoolRef;
+							PoolRef->SPGEMEntrance = SPGEMEntrance;
+
+							//EnergyPoolEntrance->EnergyPool = PoolRef;
+							
+						}
 					}
 				}
 			}
 		}
+		
+		
+		
 	}
-	
-	return nullptr;
+	else if (this->GetRecipe()->GetFName() == "Recipe_GEM_Base_C") {
+		//SPGEMEntrance = Cast<AFGBuildableFactory>(newActor);
+		UE_LOG(LogSlugPrinciples, Warning, TEXT("Construct Parent: %s"), *this->mParent->GetFName().ToString());
+	}
+	*/
+	return Super::Construct(out_children, netConstructionID);;
 
 }
